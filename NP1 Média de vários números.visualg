@@ -1,0 +1,24 @@
+algoritmo "Exercicio5"
+
+var
+   quantidade, contador: inteiro
+   numero, soma, media: real
+
+inicio
+   soma <- 0
+
+   escreva("Quantos números serão utilizados? ")
+   leia(quantidade)
+
+   para contador de 1 ate quantidade faca
+      escreva("Digite o ", contador, "º número: ")
+      leia(numero)
+
+      soma <- soma + numero
+   fimpara
+
+   media <- soma / quantidade
+
+   escreva("A média aritmética é: ", media)
+
+fimalgoritmo

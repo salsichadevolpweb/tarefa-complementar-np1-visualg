@@ -1,0 +1,60 @@
+algoritmo "Exercicio8"
+
+var
+   palavra, dica, tentativa: caractere
+   tentativasPrevistas, tentativas: inteiro
+
+inicio
+   escreval("=== JOGO DA PALAVRA-CHAVE ===")
+   escreval()
+
+   escreva("Jogador 1, digite a palavra-chave: ")
+   leia(palavra)
+
+   escreva("Digite uma dica: ")
+   leia(dica)
+
+   escreva("Quantas tentativas você acha que o Jogador 2 precisará? ")
+   leia(tentativasPrevistas)
+
+   escreval()
+   escreval("=== VEZ DO JOGADOR 2 ===")
+   escreval("Dica: ", dica)
+   escreval()
+
+   tentativas <- 0
+
+   repita
+
+      tentativas <- tentativas + 1
+
+      escreva("Tentativa ", tentativas, ": ")
+      leia(tentativa)
+
+      se tentativa = palavra entao
+         escreval("Você acertou!")
+      senao
+         escreval("Você errou!")
+      fimse
+
+   ate tentativa = palavra
+
+   escreval()
+   escreval("Quantidade de tentativas: ", tentativas)
+
+   se tentativas < tentativasPrevistas entao
+      escreval("Jogador 2 venceu!")
+
+   senao
+
+      se tentativas = tentativasPrevistas entao
+         escreval("Jogador 1 venceu!")
+
+      senao
+         escreval("Empate!")
+
+      fimse
+
+   fimse
+
+fimalgoritmo

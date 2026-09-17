@@ -1,0 +1,17 @@
+algoritmo "Exercicio4"
+
+var
+   massa, aceleracao, forca: real
+
+inicio
+   escreva("Digite a massa do objeto em kg: ")
+   leia(massa)
+
+   escreva("Digite a aceleração em m/s²: ")
+   leia(aceleracao)
+
+   forca <- massa * aceleracao
+
+   escreva("A força do objeto é: ", forca, " N")
+
+fimalgoritmo

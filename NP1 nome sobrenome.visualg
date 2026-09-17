@@ -1,0 +1,15 @@
+algoritmo "Exercicio2"
+
+var
+   nome, sobrenome: caractere
+
+inicio
+   escreva("Digite seu nome: ")
+   leia(nome)
+
+   escreva("Digite seu sobrenome: ")
+   leia(sobrenome)
+
+   escreva("Seu nome é ", nome, " ", sobrenome)
+
+fimalgoritmo
